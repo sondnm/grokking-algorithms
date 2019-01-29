@@ -4,7 +4,7 @@ require 'minitest/autorun'
 require_relative './recursive_count'
 
 class RecursiveCountTest < Minitest::Test
-  def test_recursive_count_returns_a_number
+  def test_recursive_count_returns_an_integer
     arr = [1, 2, 3, 4]
     assert_instance_of Integer, recursive_count(arr)
   end

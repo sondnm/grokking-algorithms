@@ -4,7 +4,7 @@ require 'minitest/autorun'
 require_relative './gcd'
 
 class GcdTest < Minitest::Test
-  def test_gcd_returns_a_number
+  def test_gcd_returns_an_integer
     assert_instance_of Integer, gcd(10, 4)
   end
 

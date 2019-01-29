@@ -4,7 +4,7 @@ require 'minitest/autorun'
 require_relative './loop_sum'
 
 class LoopSumTest < Minitest::Test
-  def test_loop_sum_returns_a_number
+  def test_loop_sum_returns_an_integer
     arr = [1, 2, 3, 4]
     assert_instance_of Integer, loop_sum(arr)
   end

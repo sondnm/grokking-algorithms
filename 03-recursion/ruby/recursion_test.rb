@@ -4,7 +4,7 @@ require 'minitest/autorun'
 require_relative './recursion'
 
 class RecursionTest < Minitest::Test
-  def test_factorial_returns_a_number
+  def test_factorial_returns_an_integer
     assert_instance_of Integer, factorial(3)
   end
 
