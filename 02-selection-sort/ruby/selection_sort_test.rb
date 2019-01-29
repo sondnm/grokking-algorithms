@@ -11,6 +11,6 @@ class SelectionSortTest < Minitest::Test
 
   def test_selection_sort_returns_sorted_order
     arr = [5, 3, 6, 2, 10]
-    assert selection_sort(arr) == [2, 3, 5, 6, 10]
+    assert_equal selection_sort(arr), [2, 3, 5, 6, 10]
   end
 end
