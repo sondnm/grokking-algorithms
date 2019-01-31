@@ -1,0 +1,16 @@
+---
+sudo: false
+git:
+  depth: 3
+  quiet: true
+matrix:
+  include:
+    - language: ruby
+      rvm: 2.6.0
+      script: ruby */ruby/*_test.rb
+    - language: python
+      python: 3.6
+      script: python -m unittest */python/*_test.py
+
+notifications:
+  email: false
