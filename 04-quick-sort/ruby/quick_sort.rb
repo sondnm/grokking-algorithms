@@ -2,7 +2,7 @@
 
 def quick_sort(arr)
   return arr if arr.size < 2
-  pivot_index = arr.size / 2
+  pivot_index = rand(arr.size - 1)
   pivot = arr[pivot_index]
 
   less = []
