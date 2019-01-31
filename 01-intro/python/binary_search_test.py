@@ -1,5 +1,5 @@
 import unittest
-from binary_search import binary_search
+from .binary_search import binary_search
 
 class TestBinarySearch(unittest.TestCase):
     def Setup(self):
@@ -18,6 +18,3 @@ class TestBinarySearch(unittest.TestCase):
     def test_binary_search_non_existed_item_does_not_return_anything(self):
         sorted_list = [1, 3, 5, 7, 9]
         self.assertEqual(binary_search(sorted_list, -1), None)
-
-if __name__ == '__main__':
-    unittest.main()

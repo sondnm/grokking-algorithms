@@ -1,5 +1,5 @@
 import unittest
-from recursive_max import recursive_max
+from .recursive_max import recursive_max
 
 class TestRecursiveMax(unittest.TestCase):
     def Setup(self):
@@ -13,6 +13,3 @@ class TestRecursiveMax(unittest.TestCase):
 
     def test_recursive_count_returns_the_maximum_number(self):
         self.assertEqual(recursive_max([5, 1, 3, 10, 9]), 10)
-
-if __name__ == '__main__':
-    unittest.main()

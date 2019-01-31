@@ -1,5 +1,5 @@
 import unittest
-from recursion import factorial
+from .recursion import factorial
 
 class TestRecursion(unittest.TestCase):
     def Setup(self):
@@ -13,6 +13,3 @@ class TestRecursion(unittest.TestCase):
 
     def test_factorial_returns_correct_result(self):
         self.assertEqual(factorial(5), 120)
-
-if __name__ == '__main__':
-    unittest.main()

@@ -1,5 +1,5 @@
 import unittest
-from recursive_sum import recursive_sum
+from .recursive_sum import recursive_sum
 
 class TestRecursiveSum(unittest.TestCase):
     def Setup(self):
@@ -15,6 +15,3 @@ class TestRecursiveSum(unittest.TestCase):
 
     def test_recursive_sum_returns_zero_if_list_is_empty(self):
         self.assertEqual(recursive_sum([]), 0)
-
-if __name__ == '__main__':
-    unittest.main()

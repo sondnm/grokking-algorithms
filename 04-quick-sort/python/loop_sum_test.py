@@ -1,5 +1,5 @@
 import unittest
-from loop_sum import loop_sum
+from .loop_sum import loop_sum
 
 class TestLoopSum(unittest.TestCase):
     def Setup(self):
@@ -15,6 +15,3 @@ class TestLoopSum(unittest.TestCase):
 
     def test_loop_sum_returns_zero_if_list_is_empty(self):
         self.assertEqual(loop_sum([]), 0)
-
-if __name__ == '__main__':
-    unittest.main()

@@ -1,5 +1,5 @@
 import unittest
-from gcd import gcd
+from .gcd import gcd
 
 class TestGcd(unittest.TestCase):
     def Setup(self):
@@ -16,6 +16,3 @@ class TestGcd(unittest.TestCase):
 
     def test_gcd_returns_same_result_when_arguments_are_swapped(self):
         self.assertEqual(gcd(10, 4), gcd(4, 10))
-
-if __name__ == '__main__':
-    unittest.main()
