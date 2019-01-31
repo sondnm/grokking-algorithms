@@ -4,7 +4,7 @@ def recursive_max(arr):
     elif len(arr) == 1:
         return arr[0]
     else:
-        sub_max = recursive_max(arr[1::])
+        sub_max = recursive_max(arr[1:])
         if sub_max > arr[0]:
             return sub_max
         else:
