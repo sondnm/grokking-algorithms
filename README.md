@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/sondnm/grokking-algorithms.svg?branch=master)](https://travis-ci.org/sondnm/grokking-algorithms)
+
 # Grokking Algorithms
 Implementation of algorithms from the book Grokking Algorithms
 
