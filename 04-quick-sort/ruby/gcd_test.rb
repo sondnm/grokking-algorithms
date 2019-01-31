@@ -9,11 +9,11 @@ class GcdTest < Minitest::Test
   end
 
   def test_gcd_returns_greatest_common_divisor
-    assert_equal gcd(10, 4), 2
+    assert_equal 2, gcd(10, 4)
   end
 
   def test_gcd_returns_non_zero_integer_when_an_argument_is_zero
-    assert_equal gcd(10, 0), 10
+    assert_equal 10, gcd(10, 0)
   end
 
   def test_gcd_returns_same_result_when_arguments_are_swapped

@@ -11,9 +11,9 @@ class RecursiveBinarySearchTest < Minitest::Test
 
   def test_recursive_binary_search_existed_item_returns_correct_position
     list = [1, 3, 5, 7, 9]
-    assert_equal recursive_binary_search(list, 0, list.size - 1, 3), 1
-    assert_equal recursive_binary_search(list, 0, list.size - 1, list.first), 0
-    assert_equal recursive_binary_search(list, 0, list.size - 1, list.last), list.size - 1
+    assert_equal 1, recursive_binary_search(list, 0, list.size - 1, 3)
+    assert_equal 0, recursive_binary_search(list, 0, list.size - 1, list.first)
+    assert_equal list.size - 1, recursive_binary_search(list, 0, list.size - 1, list.last)
   end
 
   def test_recursive_binary_search_non_existed_item_does_not_return_anything

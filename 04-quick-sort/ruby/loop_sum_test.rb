@@ -11,10 +11,10 @@ class LoopSumTest < Minitest::Test
 
   def test_loop_sum_returns_sum_of_all_items
     arr = [1, 2, 3, 4]
-    assert_equal loop_sum(arr), 10
+    assert_equal 10, loop_sum(arr)
   end
 
   def test_loop_sum_returns_zero_if_list_is_empty
-    assert_equal loop_sum([]), 0
+    assert_equal 0, loop_sum([])
   end
 end

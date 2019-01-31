@@ -9,10 +9,10 @@ class RecursiveMaxTest < Minitest::Test
   end
 
   def test_recursive_count_returns_the_single_number_when_array_has_one_item
-    assert_equal recursive_max([2]), 2
+    assert_equal 2, recursive_max([2])
   end
 
   def test_recursive_count_returns_the_maximum_number
-    assert_equal recursive_max([5, 1, 3, 10, 9]), 10
+    assert_equal 10, recursive_max([5, 1, 3, 10, 9])
   end
 end

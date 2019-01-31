@@ -9,10 +9,10 @@ class RecursionTest < Minitest::Test
   end
 
   def test_factorial_returns_base_case
-    assert_equal factorial(1), 1
+    assert_equal 1, factorial(1)
   end
 
   def test_factorial_returns_correct_result
-    assert_equal factorial(5), 120
+    assert_equal 120, factorial(5)
   end
 end
