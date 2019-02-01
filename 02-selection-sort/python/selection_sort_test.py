@@ -2,7 +2,7 @@ import unittest
 from .selection_sort import selection_sort
 
 class TestSelectionSort(unittest.TestCase):
-    def Setup(self):
+    def setUp(self):
         pass
 
     def test_selection_sort_returns_an_array(self):

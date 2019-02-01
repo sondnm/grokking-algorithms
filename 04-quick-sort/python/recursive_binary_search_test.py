@@ -2,7 +2,7 @@ import unittest
 from .recursive_binary_search import recursive_binary_search
 
 class TestRecursiveBinarySearch(unittest.TestCase):
-    def Setup(self):
+    def setUp(self):
         pass
 
     def test_recursive_binary_search_returns_a_number(self):

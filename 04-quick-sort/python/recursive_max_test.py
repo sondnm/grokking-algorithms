@@ -2,7 +2,7 @@ import unittest
 from .recursive_max import recursive_max
 
 class TestRecursiveMax(unittest.TestCase):
-    def Setup(self):
+    def setUp(self):
         pass
 
     def test_recursive_count_returns_nothing_when_array_is_empty(self):

@@ -2,7 +2,7 @@ import unittest
 from .recursive_count import recursive_count
 
 class TestRecursiveCount(unittest.TestCase):
-    def Setup(self):
+    def setUp(self):
         pass
 
     def test_recursive_count_returns_a_number(self):

@@ -2,7 +2,7 @@ import unittest
 from .binary_search import binary_search
 
 class TestBinarySearch(unittest.TestCase):
-    def Setup(self):
+    def setUp(self):
         pass
 
     def test_binary_search_returns_an_integer(self):

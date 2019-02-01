@@ -2,7 +2,7 @@ import unittest
 from .loop_sum import loop_sum
 
 class TestLoopSum(unittest.TestCase):
-    def Setup(self):
+    def setUp(self):
         pass
 
     def test_loop_sum_returns_a_number(self):

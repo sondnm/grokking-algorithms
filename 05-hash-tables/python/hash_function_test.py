@@ -2,7 +2,7 @@ import unittest
 from .hash_function import hash_function, HASH_SIZE
 
 class TestHashFunction(unittest.TestCase):
-    def Setup(self):
+    def setUp(self):
         pass
 
     def test_hash_function_returns_a_number(self):

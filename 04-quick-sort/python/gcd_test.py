@@ -2,7 +2,7 @@ import unittest
 from .gcd import gcd
 
 class TestGcd(unittest.TestCase):
-    def Setup(self):
+    def setUp(self):
         pass
 
     def test_gcd_returns_a_number(self):

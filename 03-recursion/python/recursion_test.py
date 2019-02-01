@@ -2,7 +2,7 @@ import unittest
 from .recursion import factorial
 
 class TestRecursion(unittest.TestCase):
-    def Setup(self):
+    def setUp(self):
         pass
 
     def test_factorial_returns_a_number(self):
