@@ -14,7 +14,7 @@ class TestSellerSearch(unittest.TestCase):
             'jonny': [],
         }
 
-    def test_seller_search_returns_boolean(self):
+    def test_seller_search_returns_a_tuple(self):
         self.assertIsInstance(seller_search(self.graph, 'you'), tuple)
 
     def test_seller_search_returns_correct_seller(self):
