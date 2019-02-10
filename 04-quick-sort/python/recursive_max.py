@@ -10,4 +10,3 @@ def recursive_max(arr):
         else:
             return arr[0]
 
-

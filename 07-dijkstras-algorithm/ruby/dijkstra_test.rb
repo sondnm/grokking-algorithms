@@ -76,7 +76,6 @@ class DijkstraTest < Minitest::Test
     assert_equal({'a' => 5, 'b' => 2, 'c' => 9, 'd' => 7, 'fin' => 8}, costs)
   end
 
-
   def test_search_finds_the_shortest_path_for_b_exercise_graph
     graph = {
       'start' => {
