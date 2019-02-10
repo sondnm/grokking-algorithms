@@ -1,5 +1,5 @@
 def search(graph, costs, parents):
-    processed = []
+    processed = {}
     node = find_lowest_cost_node(costs, processed)
     while node is not None:
         cost = costs[node]
@@ -9,7 +9,7 @@ def search(graph, costs, parents):
             if costs[n] > new_cost:
                 costs[n] = new_cost
                 parents[n] = node
-        processed.append(node)
+        processed[node] = True
         node = find_lowest_cost_node(costs, processed)
 
 def find_lowest_cost_node(costs, processed):
@@ -17,7 +17,7 @@ def find_lowest_cost_node(costs, processed):
     lowest_cost_node =  None
     for node in costs:
         cost = costs[node]
-        if cost < lowest_cost and node not in processed:
+        if cost < lowest_cost and not processed.get(node):
             lowest_cost = cost
             lowest_cost_node = node
     return lowest_cost_node
